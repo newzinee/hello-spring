@@ -1,7 +1,6 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import java.util.List;
@@ -12,7 +11,6 @@ import java.util.Optional;
  * @version 0.1.0
  * @since 2021/02/10
  */
-@Transactional
 public class JpaMemberRepository implements MemberRepository {
 
     private final EntityManager em;
