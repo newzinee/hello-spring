@@ -2,6 +2,7 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +12,7 @@ import java.util.Optional;
  * @version 0.1.0
  * @since 2021/01/24
  */
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;
